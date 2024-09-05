@@ -62,6 +62,13 @@ export default function Home() {
         return `${days}d ${hours}h ${minutes}m ${secs}s`;
     };
 
+    const formatDate = (index) => {
+        const startDate = new Date();
+        const resultDate = new Date(startDate);
+        resultDate.setDate(startDate.getDate() + index);
+        return resultDate.toDateString();
+    };
+
     const divs = Array.from({ length: 365 }, (_, index) => (
         <div
             key={index}
@@ -69,7 +76,7 @@ export default function Home() {
                 clickedDivs.includes(index) ? "bg-green-500" : ""
             }`}
             onClick={() => handleClick(index)}
-            title={index + 1}
+            title={formatDate(index-2)}
         ></div>
     ));
 
