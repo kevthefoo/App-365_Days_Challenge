@@ -63,7 +63,7 @@ export default function Home() {
     };
 
     const formatDate = (index) => {
-        const startDate = new Date();
+        const startDate = new Date(2024, 8, 2);
         const resultDate = new Date(startDate);
         resultDate.setDate(startDate.getDate() + index);
         return resultDate.toDateString();
@@ -76,7 +76,7 @@ export default function Home() {
                 clickedDivs.includes(index) ? "bg-green-500" : ""
             }`}
             onClick={() => handleClick(index)}
-            title={formatDate(index-2)}
+            title={formatDate(index)}
         ></div>
     ));
 
