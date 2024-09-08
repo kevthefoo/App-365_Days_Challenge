@@ -93,12 +93,12 @@ export default function Home() {
             <div className="mt-4 text-xl">
                 Time Left: {formatTime(timeLeft)}
             </div>
-            {/* <button
+            <button
                 onClick={handleClearMemory}
                 className="mt-4 px-4 py-2 bg-red-500 text-white rounded"
             >
                 Reset
-            </button> */}
+            </button>
         </section>
     );
 }
