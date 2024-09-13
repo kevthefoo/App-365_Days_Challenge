@@ -84,7 +84,7 @@ export default function Home() {
         <section className="h-screen flex flex-col justify-center items-center ">
             <header className="fixed top-0 w-full flex items-center justify-center bg-blue-500 p-4 shadow-lg rounded-b-lg">
                 <h1 className="text-white text-2xl font-bold">
-                    365 Days Challenge
+                    1000 Days Challenge
                 </h1>
             </header>
             <div className="container grid grid-cols-[repeat(30,1.5rem)] grid-rows-[repeat(13,1.5rem)] items-center justify-center mt-20">
